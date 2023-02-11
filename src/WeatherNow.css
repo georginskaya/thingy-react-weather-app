@@ -1,0 +1,18 @@
+.weather_now_info{
+  text-align: left;
+  padding-top: 8%;
+  font-size: 39px;
+}
+
+
+.weather_now_info h1 {
+    font-size: 68px;
+    font-weight: bold;
+}
+
+.visual {
+    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
