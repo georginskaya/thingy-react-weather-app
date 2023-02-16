@@ -4,7 +4,8 @@
 } */
 
 .active {
-    color:red;
+    color: rgb(147, 147, 147)!important;
+    
 }
 
 .unitButton{
