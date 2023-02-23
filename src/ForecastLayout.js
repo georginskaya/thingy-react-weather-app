@@ -1,5 +1,4 @@
 import React from "react"; 
-import WeatherTemperature from './WeatherTemperature';
 import "./DrawerContent.css";
 
 
