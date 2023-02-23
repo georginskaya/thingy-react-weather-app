@@ -1,3 +1,35 @@
+
+
 .drawer-content { 
     color:black;
+    font-size: 40px;
+    padding-top: 10px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    
+  
 }
+
+.forecast_item{
+    float: left;
+    margin-right: 0;
+   text-align: center;
+    
+
+}
+.forecast{
+     justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.weekly_forecast{
+   margin-top: 10px;
+    margin-bottom: 22px;
+    text-align: center;
+    font-size: 49px;
+    font-weight: 600;
+}
+
+

@@ -1,11 +1,25 @@
 import React from "react";
 import './DrawerContent.css';
+import ForecastLayout from "./ForecastLayout";
 
-function DrawerContent() {
+
+function DrawerContent(props) {
+
+  
   return (
-    <div className="drawer-content">
-      <h1>Hello, Johnny!!1</h1>
-      
+    <div className="container drawer-content">
+  <div className="row">
+      <h1 className="weekly_forecast">Weekly Forecast</h1></div>
+    <div className="row">
+      {props.weatherData.map(function(dailyForecast,index){ 
+        if (index >0 && index < 6){
+        return(
+          <div className="col" key={index}>
+            <ForecastLayout data={dailyForecast} />
+            </div>
+        )}
+      }
+      )} </div>
     </div>
   );
 }
