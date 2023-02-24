@@ -58,7 +58,7 @@ if (loaded){ return (
     <div className="row">
      <div className="col-sm">
       <div className="visual">
-     <img classNmae="visualImg"src={sun}/>
+     <img className="visualImg"src={sun}/>
       </div>
     </div>
 
