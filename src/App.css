@@ -101,3 +101,50 @@ input.searchBox{
         transform: rotate(45deg) translate(5px, 5px);
     }
 }
+
+
+
+@media only screen and (max-width: 600px) {
+  .open-btn-arrow span {
+    display: block;
+    width: 17px;
+    height: 17px;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+    transform: rotate(45deg);
+    
+  
+}
+
+.open-btn-arrow {
+    position: absolute;
+    border: none;
+    background-color: black;
+    margin-top: 4vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+.date-time{
+  font-size: 25px;
+}
+
+input.searchBox{
+  margin-top: 20px;
+  color:white;
+  background-color: black;
+  border: none;
+  width:fit-content;
+  font-size: 18px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+  font-size: 28px;
+}
+
+
+}

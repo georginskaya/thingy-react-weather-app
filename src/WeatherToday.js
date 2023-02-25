@@ -10,7 +10,7 @@ export default function WeatherToday (props) {
      <WeatherTemperature celsius={props.data.temperature.day} /> 
       <p>{props.data.condition.description}</p>  
       <p>humidity: {props.data.temperature.humidity}%</p>  
-      <p>wind speed: {props.data.wind.speed} km/h</p> 
+      <p>wind speed: {Math.round(props.data.wind.speed)} km/h</p> 
      
 
     </div>)

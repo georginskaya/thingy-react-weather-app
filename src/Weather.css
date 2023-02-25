@@ -20,3 +20,21 @@
 .visualImg{
   width: 400px;
 }
+
+@media only screen and (max-width: 660px) {
+
+.visualImg{
+  width: 190px;
+}
+
+.weather_now_info h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+.weather_now_info{
+  text-align: center;
+  padding-top: 2%;
+  font-size: 39px;
+}
+
+}
