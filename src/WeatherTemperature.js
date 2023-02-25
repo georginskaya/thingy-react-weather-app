@@ -5,8 +5,8 @@ import './WeatherTemperature.css';
 
 export default function WeatherTemperature(props) {
 const [unit, setUnit] = useState("celsius")
-const temperature = unit === "celsius" ? props.celsius: convertCtoF(props.celsius)
-
+let temperature = unit === "celsius" ? props.celsius: convertCtoF(props.celsius);
+ temperature = Math.round(temperature);
 
 let buttonCelsius = document.querySelector('.buttonC')
 let buttonFahrenheit = document.querySelector('.buttonF')

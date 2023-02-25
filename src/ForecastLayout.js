@@ -11,7 +11,7 @@ function ForecastLayout(props) {
 let newDate = new Date(props.data.time * 1000)
 let date_raw = newDate.getDate();
 let month_raw = newDate.getMonth() + 1;
-
+let temp = Math.round(props.data.temperature.day);
 
   
   return (
@@ -22,7 +22,7 @@ let month_raw = newDate.getMonth() + 1;
       
         {date_raw}/{month_raw}
          <p><img src={props.data.condition.icon_url} /></p>
-      {props.data.temperature.day} 
+        {temp}°
        
     </div>
         </div>

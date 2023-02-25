@@ -5,6 +5,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import './Weather.css';
 import sun from './img/giphy.gif'
+import sunAndCloud from './img/sunAndCloud.gif';
+import rain from './img/rain.gif';
+import falling from './img/falling.gif';
 import axios from "axios";
 import ButtonDrawer from './ButtonDrawer';
 import WeatherToday from './WeatherToday'
@@ -38,8 +41,9 @@ function handleResponse (response)  {
       setLoaded(true);
       setWeatherData(response.data.daily);
       setCity(response.data.city);
-      console.log(weatherData);
+     
 }
+
 
 if (loaded){ return (
 <div>
@@ -58,7 +62,31 @@ if (loaded){ return (
     <div className="row">
      <div className="col-sm">
       <div className="visual">
-     <img className="visualImg"src={sun}/>
+
+       {weatherData[0].condition.icon== "snow-day" ||
+        weatherData[0].condition.icon== "snow-night" ||
+        weatherData[0].condition.icon== "shower-rain-day" ||
+        weatherData[0].condition.icon== "shower-rain-night" ||
+        weatherData[0].condition.icon== "rain-night" ||
+        weatherData[0].condition.icon== "rain-day" ||
+        weatherData[0].condition.icon== "mist-day" ||
+        weatherData[0].condition.icon== "thunderstorm-day" ||
+        weatherData[0].condition.icon== "thunderstorm-night" ||
+        weatherData[0].condition.icon== "mist-night" 
+       
+       ? <img className="visualImg" src={rain}/> : 
+       
+       weatherData[0].condition.icon== "few-clouds-day" ||
+       weatherData[0].condition.icon== "few-clouds-night" ||
+       weatherData[0].condition.icon== "scattered-clouds-day" ||
+       weatherData[0].condition.icon== "scattered-clouds-night"
+       
+       ? <img className="visualImg" src={sunAndCloud}/> :
+       
+       <img className="visualImg" src={sun}/> 
+       
+       }
+    
       </div>
     </div>
 
