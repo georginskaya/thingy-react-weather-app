@@ -63,23 +63,23 @@ if (loaded){ return (
      <div className="col-sm">
       <div className="visual">
 
-       {weatherData[0].condition.icon== "snow-day" ||
-        weatherData[0].condition.icon== "snow-night" ||
-        weatherData[0].condition.icon== "shower-rain-day" ||
-        weatherData[0].condition.icon== "shower-rain-night" ||
-        weatherData[0].condition.icon== "rain-night" ||
-        weatherData[0].condition.icon== "rain-day" ||
-        weatherData[0].condition.icon== "mist-day" ||
-        weatherData[0].condition.icon== "thunderstorm-day" ||
-        weatherData[0].condition.icon== "thunderstorm-night" ||
-        weatherData[0].condition.icon== "mist-night" 
+       {weatherData[0].condition.icon=== "snow-day" ||
+        weatherData[0].condition.icon=== "snow-night" ||
+        weatherData[0].condition.icon=== "shower-rain-day" ||
+        weatherData[0].condition.icon=== "shower-rain-night" ||
+        weatherData[0].condition.icon=== "rain-night" ||
+        weatherData[0].condition.icon=== "rain-day" ||
+        weatherData[0].condition.icon=== "mist-day" ||
+        weatherData[0].condition.icon=== "thunderstorm-day" ||
+        weatherData[0].condition.icon=== "thunderstorm-night" ||
+        weatherData[0].condition.icon=== "mist-night" 
        
        ? <img className="visualImg" src={rain}/> : 
        
-       weatherData[0].condition.icon== "few-clouds-day" ||
-       weatherData[0].condition.icon== "few-clouds-night" ||
-       weatherData[0].condition.icon== "scattered-clouds-day" ||
-       weatherData[0].condition.icon== "scattered-clouds-night"
+       weatherData[0].condition.icon=== "few-clouds-day" ||
+       weatherData[0].condition.icon=== "few-clouds-night" ||
+       weatherData[0].condition.icon=== "scattered-clouds-day" ||
+       weatherData[0].condition.icon=== "scattered-clouds-night"
        
        ? <img className="visualImg" src={sunAndCloud}/> :
        
