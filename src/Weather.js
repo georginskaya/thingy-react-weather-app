@@ -52,7 +52,7 @@ if (loaded){ return (
    <div className="col-sm">
        <form onSubmit={handleSubmit}>
         <div className="search_field">
-         <input className="searchBox" type="text" placeholder="Enter a city" 
+         <input className="searchBox" type="text" placeholder="Type a city" 
            onChange={handleCityChange}/>📍
 
          </div>
