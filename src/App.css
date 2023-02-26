@@ -87,6 +87,12 @@ input.searchBox{
     animation: animate 2s infinite;
 }
 
+.searchBox:focus-visible{
+   outline: none;
+   background-color: rgb(99, 78, 163);
+  
+}
+
 
 @keyframes animate {
     0% {
